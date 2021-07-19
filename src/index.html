@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo GLSL DistortionHoverEffect</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="GLSLを使用してDistortionHoverEffectを作成しました。" />
+        <meta name="keywords" content="," />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta property="og:title" content="Demo GLSL DistortionHoverEffect" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Demo GLSL DistortionHoverEffect" />
+        <meta property="og:image" content="https://kaito-takase.dev/glsl-distortion/ogp.png" />
+        <meta property="og:url" content="https://kaito-takase.dev/glsl-distortion/" />
+        <meta property="og:description" content="GLSLを使用してDistortionHoverEffectを作成しました。" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="Demo_GLSL_DistortionHoverEffect_JP" />
+        <meta name="twitter:title" content="Demo GLSL DistortionHoverEffect" />
+        <meta name="twitter:description" content="GLSLを使用してDistortionHoverEffectを作成しました。" />
+        <meta name="twitter:image" content="https://kaito-takase.dev/glsl-distortion/ogp.png" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <div class="grid">
+                <div class="grid__line"></div>
+                <div class="grid__line"></div>
+                <div class="grid__line"></div>
+                <div class="grid__line"></div>
+                <div class="grid__line"></div>
+            </div>
+            <section class="loading" data-loading="parent">
+                <div class="loading__block" data-loading="block">
+                    <p class="loading__block--inner">
+                        <span class="loading__block--text" data-loading="text">Demo GLSL Distortion</span>
+                    </p>
+                </div>
+            </section>
+            <section class="works" id="works">
+                <h2 class="works__block" data-scroll data-scroll-type="title">
+                    <span class="works__block--inner">
+                        <i class="works__block--text works__block--no01">W</i>
+                        <i class="works__block--text works__block--no02">o</i>
+                        <i class="works__block--text works__block--no03">r</i>
+                        <i class="works__block--text works__block--no04">k</i>
+                        <i class="works__block--text works__block--no05">s</i>
+                        <i class="works__block--text works__block--no06">.</i>
+                    </span>
+                </h2>
+                <ul class="works__list">
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/change-image/" class="works__list--link works__list--canvas" data-size data-canvas="item00"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/3d-animation/" class="works__list--link works__list--canvas" data-size data-canvas="item01"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/3d-watch/" class="works__list--link works__list--canvas" data-size data-canvas="item02"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/3d-juice/" class="works__list--link works__list--canvas" data-size data-canvas="item03"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/3d-dice/" class="works__list--link works__list--canvas" data-size data-canvas="item04"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/header-mouse-hover/" class="works__list--link works__list--canvas" data-size data-canvas="item05"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/barbajs/page1.html/" class="works__list--link works__list--canvas" data-size data-canvas="item06"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/one-scroll/" class="works__list--link works__list--canvas" data-size data-canvas="item07"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/page-transition/" class="works__list--link works__list--canvas" data-size data-canvas="item08"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/scroll-interlocking/" class="works__list--link works__list--canvas" data-size data-canvas="item09"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/scroll-count-circle/" class="works__list--link works__list--canvas" data-size data-canvas="item10"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/scroll-count-bar/" class="works__list--link works__list--canvas" data-size data-canvas="item11"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/scroll-image-parallax/" class="works__list--link works__list--canvas" data-size data-canvas="item12"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/header-mix-blend-mode/" class="works__list--link works__list--canvas" data-size data-canvas="item13"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/20210107/" class="works__list--link works__list--canvas" data-size data-canvas="item14"></a>
+                    </li>
+                    <li class="works__list--item" data-scroll data-scroll-type="addClass">
+                        <div class="works__border works__border--top"></div>
+                        <div class="works__border works__border--bottom"></div>
+                        <div class="works__border works__border--left"></div>
+                        <div class="works__border works__border--right"></div>
+                        <a href="https://kaito-takase.dev/blender-animation/" class="works__list--link works__list--canvas" data-size data-canvas="item15"></a>
+                    </li>
+                </ul>
+                <a href="/" class="works__archive works__archive--button" data-scroll data-scroll-type="fadeIn"> Go Home </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <small class="footer__copy">Kaito Takase Portfolio</small>
+        </footer>
+    </body>
+</html>

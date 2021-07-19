@@ -1,0 +1,16 @@
+.grid {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+
+    &__line {
+        position: relative;
+        flex-basis: 20%;
+        border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+    }
+}
